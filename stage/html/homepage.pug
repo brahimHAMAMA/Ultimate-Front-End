@@ -1,0 +1,16 @@
+- var pageTitle = "Home Page";
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title #{pageTitle}
+    include pug/layout/styles
+  body
+    .page.home-page
+      include pug/layout/sidebar
+      .content-area This Is Content Area111
+        h1 #{pageTitle}
+        <i class="fa-solid fa-house"></i>
+    include pug/layout/scripts
