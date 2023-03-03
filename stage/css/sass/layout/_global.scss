@@ -1,9 +1,11 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-body{
-    background-color: #fff;
-}
+// body{
+//     background-color: #fff;
+// }
 .page{
     min-height: 100vh;
     .content-area{
@@ -12,5 +14,8 @@ body{
         transition: .3s;
         will-change: width;
         float: right;
+        &.no-sidebar{
+            width: 100%;
+        }
     }
 }

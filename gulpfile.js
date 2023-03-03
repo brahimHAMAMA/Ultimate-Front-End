@@ -27,7 +27,7 @@ gulp.task("html", function () {
 // css Task
 gulp.task("css", function () {
   return gulp
-    .src(["stage/css/**/*.css", "stage/css/**/*scss"])
+    .src("stage/css/**/*.scss")
     .pipe(sourcemaps.init())
     .pipe(sass().on("error", sass.logError)) //{ outputStyle: "compressed" }
     .pipe(autoprefixer())
@@ -44,7 +44,7 @@ gulp.task("js", function () {
     .src("stage/js/*.js")
     .pipe(concat("allscript.js"))
     .pipe(minify())
-    .pipe(uglify())
+//    .pipe(uglify())
     .pipe(gulp.dest("dist/js"))
     .pipe(notify("Task JS is completed!..."))
     .pipe(livereload());
