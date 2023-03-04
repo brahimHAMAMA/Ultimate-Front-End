@@ -1,0 +1,18 @@
+npm gulp@3.9.1 --save-dev
+npm i gulp-concat gulp-sass gulp-autoprefixer gulp-pug gulp-livereload gulp-notify gulp-sourcemaps gulp-minify --save-dev
+npm i static-server
+
+
+git add .
+
+git commit -m ""
+
+git push origin matser 
+
+
+
+git log (for see modify or no)
+
+
+شرح git and github
+https://www.youtube.com/watch?v=2QP4QxzG-wY

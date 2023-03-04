@@ -1,0 +1,16 @@
+- var pageTitle = "Home Page";
+<!DOCTYPE html>
+html(lang="en")
+  head
+    include pug/layout/meta
+    include pug/layout/styles
+  body
+    .page.home-page
+      include pug/layout/sidebar
+      .content-area
+        include pug/layout/header
+        .content
+          h1 #{pageTitle}
+          .btn.btn-danger Helllo
+          <button type="button" class="btn btn-primary">Danger</button>
+    include pug/layout/scripts

@@ -1,0 +1,1 @@
+$(function(){"use strict";$(".toggle-sidebare").on("click",function(){$(".content-area, .sidebar").toggleClass("no-sidebar")}),$(".toggle-submenu").on("click",function(){$(".toggle-submenu").toggleClass("fa-angle-right fa-angle-down")})});
