@@ -9,8 +9,10 @@ html(lang="en")
       include pug/layout/sidebar
       .content-area
         include pug/layout/header
-        .content
-          h1 #{pageTitle}
-          .btn.btn-danger Helllo
-          <button type="button" class="btn btn-primary">Danger</button>
+        .container-fluid
+          .content
+            include pug/components/page-head
+
+
+
     include pug/layout/scripts

@@ -4,8 +4,11 @@ $(function(){
     $('.toggle-sidebare').on('click', function(){
         $('.content-area, .sidebar').toggleClass("no-sidebar");
     });
+
     // Toggle Submenu
-    $('.toggle-submenu').on('click', function(){
-        $('.toggle-submenu').toggleClass('fa-angle-right fa-angle-down');
+    $('.links-area li a').on("click", function(){
+        $(this).next('.child-links').slideToggle();
+        $(this).children('.toggle-submenu').toggleClass('fa-angle-down fa-angle-right');
+        console.log('Good');
     });
 });
