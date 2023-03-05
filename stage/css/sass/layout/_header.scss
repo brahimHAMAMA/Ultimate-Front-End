@@ -1,8 +1,64 @@
 .header{
     background-color: #fff;
-    padding: 15px;
+    padding: 1.25rem;
     .toggle-sidebare{
         cursor: pointer;
-        //dfff
+    }
+    .notification-container{
+        display: inline-block;
+        margin-left: 20px;
+        .toggle-notification{
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 50%;
+            color: #333;
+            cursor: pointer;
+        }
+        .dropdown-menu{
+            min-width: 600px;
+            border: none;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                top: -10px;
+                left: 10px;
+                border-style: solid;
+                border-width: 10px;
+                border-color: transparent transparent #333 transparent;
+            }
+            .noti-head{
+                background-color: #333;
+                padding: 15px;
+                color: #fff;
+                span{
+                    float: right;
+                }
+            }
+            .noti-content{
+                padding: 15px;
+                ul{
+                    margin: 0;
+                    li{
+                        padding: 10px;
+                        .icon-noti{
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            .noti-foot{
+                a{
+                    display: block;
+                    padding: 10px;
+                    border-top: 1px solid #eee;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+                
+            }
+
+        }
     }
 }

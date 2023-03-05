@@ -1,2 +1,26 @@
 .header
   i.fa.fa-exchange.fa-lg.toggle-sidebare
+  .dropdown.notification-container
+    i.fa-solid.fa-bell.fa-lg.toggle-notification#notification.dropdown-toggle(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+    .dropdown-menu(aria-labelledby='notification')
+      .noti-head
+        | Notification
+        span 50
+      .noti-content
+        ul.list-unstyled
+          li
+            i.fa-solid.fa-envelope.fa-lg.fa-fw.icon-noti
+            | You Got Emai From Bla Bla Bla
+          li
+            i.fa-solid.fa-money-bill.fa-lg.fa-fw.icon-noti
+            | You Got Mony From Bla Bla Bla
+          li
+            i.fa-solid.fa-thumbs-up.fa-lg.fa-fw.icon-noti
+            | You Got Like From Bla Bla Bla
+          li
+            i.fa-solid.fa-phone.fa-lg.fa-fw.icon-noti
+            | You Got Call From Bla Bla Bla
+          li
+            i.fa-solid.fa-comment.fa-lg.fa-fw.icon-noti
+            | You Got Comment From Bla Bla Bla
+      .noti-foot.text-center: a(href="#") View All Notification
