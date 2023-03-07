@@ -4552,17 +4552,18 @@
 .header {
   background-color: #fff;
   padding: 1.25rem; }
+  .header .header-icon {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 50%;
+    color: #333;
+    cursor: pointer;
+    margin-right: 10px; }
   .header .toggle-sidebare {
     cursor: pointer; }
   .header .notification-container {
     display: inline-block;
     margin-left: 20px; }
-    .header .notification-container .toggle-notification {
-      background-color: #eee;
-      padding: 10px;
-      border-radius: 50%;
-      color: #333;
-      cursor: pointer; }
     .header .notification-container .dropdown-menu {
       min-width: 600px;
       border: none;
@@ -4582,13 +4583,33 @@
         .header .notification-container .dropdown-menu .noti-head span {
           float: right; }
       .header .notification-container .dropdown-menu .noti-content {
-        padding: 15px; }
+        padding: 10px; }
         .header .notification-container .dropdown-menu .noti-content ul {
           margin: 0; }
           .header .notification-container .dropdown-menu .noti-content ul li {
-            padding: 10px; }
+            padding: 5px;
+            color: #777;
+            border-bottom: 1px solid #e9e8e8;
+            margin-bottom: 10px;
+            font-size: 1rem; }
+            .header .notification-container .dropdown-menu .noti-content ul li:first-child {
+              padding-top: 0; }
+            .header .notification-container .dropdown-menu .noti-content ul li:last-child {
+              padding-bottom: 0;
+              margin-bottom: 0;
+              border-bottom: none; }
             .header .notification-container .dropdown-menu .noti-content ul li .icon-noti {
               margin-right: 10px; }
+              .header .notification-container .dropdown-menu .noti-content ul li .icon-noti.fa-envelope {
+                color: #4caf50; }
+              .header .notification-container .dropdown-menu .noti-content ul li .icon-noti.fa-money-bill {
+                color: #c0392b; }
+              .header .notification-container .dropdown-menu .noti-content ul li .icon-noti.fa-thumbs-up {
+                color: #2980b9; }
+              .header .notification-container .dropdown-menu .noti-content ul li .icon-noti.fa-phone {
+                color: #c0392b; }
+              .header .notification-container .dropdown-menu .noti-content ul li .icon-noti.fa-comment {
+                color: #4caf50; }
       .header .notification-container .dropdown-menu .noti-foot a {
         display: block;
         padding: 10px;
