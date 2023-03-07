@@ -4616,6 +4616,44 @@
         border-top: 1px solid #eee; }
         .header .notification-container .dropdown-menu .noti-foot a:hover {
           text-decoration: none; }
+  .header .usermenu-container {
+    float: right; }
+    .header .usermenu-container .username {
+      cursor: pointer; }
+      .header .usermenu-container .username .avatar {
+        width: 40px;
+        height: 40px; }
+      .header .usermenu-container .username .user {
+        font-weight: bold; }
+    .header .usermenu-container .dropdown-menu {
+      min-width: 500px;
+      border: none;
+      padding: 20px;
+      position: relative;
+      border: 1px solid #333; }
+      .header .usermenu-container .dropdown-menu::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: 10px;
+        border-style: solid;
+        border-width: 10px;
+        border-color: transparent transparent #333 transparent; }
+      .header .usermenu-container .dropdown-menu .user-info h3 {
+        font-weight: bold;
+        color: #333; }
+      .header .usermenu-container .dropdown-menu .user-info p {
+        color: #777; }
+      .header .usermenu-container .dropdown-menu .activities-list li {
+        padding: 10px;
+        cursor: pointer; }
+        .header .usermenu-container .dropdown-menu .activities-list li:hover {
+          background-color: #f7f7f7; }
+      .header .usermenu-container .dropdown-menu .usermenu-links .link-box {
+        background-color: #f7f7f7;
+        padding: 5px 10px;
+        border-radius: 6px;
+        border: 1px solid #333; }
 
 * {
   box-sizing: border-box; }

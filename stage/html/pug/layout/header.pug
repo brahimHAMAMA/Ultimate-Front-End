@@ -24,5 +24,33 @@
             i.fa-solid.fa-comment.fa-lg.fa-fw.icon-noti
             | You Got Comment From Bla Bla Bla
       .noti-foot.text-center: a(href="#") View All Notification
-
   i.fa-solid.fa-maximize.fa-lg.toggle-fullscreen.header-icon
+  .dropdown.usermenu-container
+    .username#usermenu(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+      img.avatar.rounded-circle(src="imgs/avatar.png", alt="User Image")
+      span.user Brahim HAMAMA
+      i.fa-solid.fa-angle-down.fa-lg
+    .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+      .user-info
+        h3 Brahim HAMAMA
+        p Premium Member
+      hr
+      ul.activities-list.list-unstyled
+        li Added Comment on Post "How To Make Bla Bla Bla"
+        li Create Post On Categorie "Science"
+        li Create Chart On Charts Page
+        li Added Comment on Post "How To Make Bla Bla Bla"
+      hr 
+      .row.usermenu-links
+        .col
+          .link-box
+            .fa-solid.fa-gear.fa-lg.fa-fw
+            span Settings
+        .col
+          .link-box
+            .fa-solid.fa-user.fa-lg.fa-fw
+            span My Profile
+        .col
+          .link-box
+            .fa-solid.fa-power-off.fa-lg.fa-fw
+            span Logout
