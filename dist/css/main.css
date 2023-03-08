@@ -4549,6 +4549,15 @@
 .fa, .fas {
   font-weight: 900; }
 
+.green-theme .classname {
+  color: #16a085; }
+
+.blue-theme .classname {
+  color: #3498db; }
+
+.red-theme .classname {
+  color: #c0392b; }
+
 .header {
   background-color: #fff;
   padding: 1.25rem; }
