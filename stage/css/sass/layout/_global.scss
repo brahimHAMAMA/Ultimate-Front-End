@@ -20,4 +20,15 @@ body{
             width: 100%;
         }
     }
+    .page-head{
+        padding: 20px;
+        margin-top: 20px;
+        .page-title{
+            font-weight: bold;
+//            color: #16a085
+        }
+        .page-description{
+            font-size: 1rem;
+        }
+    }
 }

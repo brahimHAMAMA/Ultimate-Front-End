@@ -4549,14 +4549,29 @@
 .fa, .fas {
   font-weight: 900; }
 
-.green-theme .classname {
+.green-theme .page .page-head .page-title {
   color: #16a085; }
 
-.blue-theme .classname {
+.green-theme .page .page-head .page-description {
+  color: #16a085; }
+
+.blue-theme .page .page-head .page-title {
   color: #3498db; }
 
-.red-theme .classname {
+.blue-theme .page .page-head .page-description {
+  color: #3498db; }
+
+.red-theme .page .page-head .page-title {
   color: #c0392b; }
+
+.red-theme .page .page-head .page-description {
+  color: #c0392b; }
+
+.orange-theme .page .page-head .page-title {
+  color: #d35400; }
+
+.orange-theme .page .page-head .page-description {
+  color: #d35400; }
 
 .header {
   background-color: #fff;
@@ -4686,6 +4701,13 @@ body {
     background-color: #f2f1f6; }
     .page .content-area.no-sidebar {
       width: 100%; }
+  .page .page-head {
+    padding: 20px;
+    margin-top: 20px; }
+    .page .page-head .page-title {
+      font-weight: bold; }
+    .page .page-head .page-description {
+      font-size: 1rem; }
 
 .page .sidebar {
   position: fixed;
@@ -4766,6 +4788,10 @@ body {
   padding: 20px;
   border-left: 1px solid #333;
   transition: .3s; }
+  .setting-box .option-title {
+    color: #444;
+    font-weight: bold;
+    margin: 10px 0 15px; }
   .setting-box .toggle-settings {
     position: absolute;
     left: -33px;
@@ -4780,5 +4806,23 @@ body {
     cursor: pointer; }
   .setting-box.hide-settings {
     right: -250px; }
+  .setting-box .color-options ul li:nth-child(1) {
+    background-color: #16a085; }
+  .setting-box .color-options ul li:nth-child(2) {
+    background-color: #3498db; }
+  .setting-box .color-options ul li:nth-child(3) {
+    background-color: #c0392b; }
+  .setting-box .color-options ul li:nth-child(4) {
+    background-color: #d35400; }
+  .setting-box .color-options ul li {
+    background-color: #c0392b;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+    display: inline-block; }
+    .setting-box .color-options ul li:hover, .setting-box .color-options ul li.active {
+      opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */

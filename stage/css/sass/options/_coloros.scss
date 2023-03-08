@@ -1,15 +1,18 @@
 $themes:(
     green-theme:(color:#16a085),
-//    $FlatGreenAlt: #1abc9c,
     blue-theme:(color:#3498db),
     red-theme:(color:#c0392b),
-
+    orange-theme:(color:#d35400),
 );
 
 @each $theme, $map in $themes{
     .#{$theme}{
-        .classname{
+        .page .page-head .page-title{
             color: map-get($map, color );
         }
+        .page .page-head .page-description{
+            color: map-get($map, color );
+        }
+
     }
 }
