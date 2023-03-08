@@ -16,7 +16,11 @@ $(function(){
         $('.toggle-fullscreen').toggleClass("fullscreen");
         ($(this).hasClass('fullscreen'))?openFullscreen(): closeFullscreen()
     });
-
+    // Toggle Settings Box
+    $('.toggle-settings').on('click', function(){
+        $(this).children('.gear-icon').toggleClass('fa-spin');
+        $('.setting-box').toggleClass('hide-settings');
+    });
 });
 
         /* Get the documentElement (<html>) to display the page in fullscreen */

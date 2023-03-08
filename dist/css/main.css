@@ -4622,7 +4622,8 @@
       cursor: pointer; }
       .header .usermenu-container .username .avatar {
         width: 40px;
-        height: 40px; }
+        height: 40px;
+        margin-right: 10px; }
       .header .usermenu-container .username .user {
         font-weight: bold; }
     .header .usermenu-container .dropdown-menu {
@@ -4653,7 +4654,8 @@
         background-color: #f7f7f7;
         padding: 5px 10px;
         border-radius: 6px;
-        border: 1px solid #333; }
+        border: 1px solid #333;
+        cursor: pointer; }
 
 * {
   box-sizing: border-box; }
@@ -4743,5 +4745,31 @@ body {
         width: 3px;
         height: 80%;
         background-color: #fff; }
+
+.setting-box {
+  position: fixed;
+  right: 0px;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  padding: 20px;
+  border-left: 1px solid #333;
+  transition: .3s; }
+  .setting-box .toggle-settings {
+    position: absolute;
+    left: -33px;
+    top: 100px;
+    background-color: #fff;
+    border-left: 1px solid #333;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #fff;
+    padding: 5px;
+    border-radius: 6px 0 0 6px;
+    cursor: pointer; }
+  .setting-box.hide-settings {
+    right: -250px; }
 
 /*# sourceMappingURL=main.css.map */
