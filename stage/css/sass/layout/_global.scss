@@ -2,11 +2,20 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Kalam';
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
+    &.roboto{
+        font-family: 'Roboto', sans-serif;
+    }
+    &.playfair-display{
+        font-family: 'Playfair Display', serif;
+    }
+    &.sono{
+        font-family: 'Sono', sans-serif;    }
+    &.open-sans{
+        font-family: 'Open Sans', sans-serif;
+    }
 }
+
 .page{
     min-height: 100vh;
     .content-area{

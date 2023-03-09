@@ -32,6 +32,15 @@ $(function(){
         $('body').removeClass(themesClasses.join(' '))
         .addClass($(this).data("theme"));
     });
+    // Change font style
+    var fontClasses =[];
+    $(".font-options select option").each(function(){
+        fontClasses.push($(this).val());
+    });
+    $('.font-options select').on('change', function(){
+        $('body').removeClass(fontClasses.join(' '))
+        .addClass($(this).find("option:selected").val());
+    });
 
 
 });
