@@ -1,7 +1,7 @@
 .sidebar 
   .logo-area.text-center Brahim
   ul.links-area.list-unstyled
-    li: a(href="#") Homepage 
+    li: a(href="homepage.html" class= pageTitle === "Home Page" ?"active": "") Home Page 
     li
       a(href="#") 
         | Forms
@@ -18,3 +18,4 @@
       ul.child-links.list-unstyled
         li: a(href="#") Loading
         li: a(href="#") Brodcasts
+    li: a(href="charts.html" class= pageTitle === "Charts Page" ? "active": "") Charts

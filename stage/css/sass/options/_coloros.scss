@@ -1,18 +1,29 @@
 $themes:(
-    green-theme:(color:#16a085),
-    blue-theme:(color:#3498db),
+    green-theme:(color:#039d7f),
+    blue-theme:(color:#0b8adf),
     red-theme:(color:#c0392b),
-    orange-theme:(color:#d35400),
-);
+    orange-theme:(color:#a14203),
+    purple-theme:(color:#8e44ad),
+    );
+
 
 @each $theme, $map in $themes{
     .#{$theme}{
+        $color: map-get($map, color );
         .page .page-head .page-title{
-            color: map-get($map, color );
+            color: $color;
         }
-        .page .page-head .page-description{
-            color: map-get($map, color );
+        .page .sidebar .links-area li a:hover{
+            color: $color;
         }
-
+        .page .sidebar .links-area .child-links a:hover::before{
+            background-color: $color;
+        }
+        .page .sidebar .links-area > li > a.active{
+            color: $color;
+        }
+        .page .sidebar .links-area > li > a.active::before{
+            border-color: $color;
+        }
     }
 }

@@ -28,7 +28,7 @@
                     transition: .3s;
                     &:hover{
                         text-decoration: none;
-                        color: #fff;
+                        color: #039d7f;
                     }
                 }    
             }
@@ -49,6 +49,12 @@
                 }
                 &:hover{
                     padding-left: 25px;
+                }
+                &.active{
+                    color: #039d7f;
+                    &::before{
+                        border-color: #039d7f;
+                    }
                 }
             }
             .toggle-submenu{
@@ -79,7 +85,7 @@
                         transform: translateY(-50%);
                         width: 3px;
                         height: 80%;
-                        background-color: #fff;
+                        background-color: #039d7f;
                     }    
                 }
             }
